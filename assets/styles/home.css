@@ -80,6 +80,11 @@ main section#hero-section .hero-wrapper .hero-content .hero-footer button {
     border-radius: 4px;
 }
 
+/* Default Sections style */
+main section#exp {
+    height: 100vh;
+}
+
 /* Hero section (On home page) Style starts here */
 main section#hero-section {
     background-color: var(--bg-color);
@@ -148,6 +153,8 @@ main section#hero-section .hero-wrapper .hero-content .hero-footer .star-content
     font-size: 14px;
     margin-top: 0;
 }
+
+/* Partner Section styles start here */
 
 main section.partner {
     width: 100%;
