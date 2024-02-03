@@ -148,6 +148,72 @@ main section#hero-section .hero-wrapper .hero-content .hero-footer .star-content
     font-size: 14px;
     margin-top: 0;
 }
+
+main section.partner {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+main section.partner img {
+    width: 996px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+main section#exp .exp-wrapper {
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main section#exp .exp-wrapper .exp-img {
+    width: 488px;
+    height: 562.62px;
+}
+
+main section#exp .exp-wrapper .exp-img img {
+    width: 100%;
+    height: 100%;
+}
+
+main section#exp .exp-wrapper .exp-content {
+    width: 589px;
+    height: 296px;
+}
+
+main section#exp .exp-wrapper .exp-content h2 {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+main section#exp .exp-wrapper .exp-content p {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 15px;
+}
+
+main section#exp .exp-wrapper .exp-content ul {
+    margin-top: 20px;
+    height: 112px;
+}
+
+main section#exp .exp-wrapper .exp-content ul li {
+    list-style-image: url('/assets/images/home_assets/Icon.png');
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 0 0 30px;
+    width: 589px;
+}
+
 @media screen and (max-width: 767px) {
     
     header div.header_wrapper .menu-toggle {
@@ -163,7 +229,7 @@ main section#hero-section .hero-wrapper .hero-content .hero-footer .star-content
     
     header div.header_wrapper nav {
         position: fixed;
-        top: 10.8%;
+        top: 10.7%;
         right: -100%;
         width: 100%;
         height: 388px;
@@ -222,5 +288,42 @@ main section#hero-section .hero-wrapper .hero-content .hero-footer .star-content
     main section#hero-section .hero-wrapper .hero-content .hero-footer {
         flex-direction: column;
         margin-top: 30px;
+    }
+
+    main section.partner {
+        height: 100.49px;
+    }
+
+    main section.partner img {
+        width: 325px;
+        height: 53px;
+    }
+
+    main section#exp .exp-wrapper {
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+
+    main section#exp .exp-wrapper .exp-content, 
+    main section#exp .exp-wrapper .exp-img {
+        width: 327px;
+    }
+
+    main section#exp .exp-wrapper .exp-content h2 {
+        font-size: 24px;
+    }
+
+    main section#exp .exp-wrapper .exp-content p {
+        font-size: 20px;
+    }
+
+    main section#exp .exp-wrapper .exp-content ul li {
+        font-size: 16px;
+        line-height: 24px;
+        width: 295px;
+    }
+
+    main section#exp .exp-wrapper .exp-img {
+        margin-top: 20%;
     }
 }
