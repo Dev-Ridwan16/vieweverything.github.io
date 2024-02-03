@@ -10,7 +10,7 @@ function handleOpenMenu() {
     menu.style.right = 0
     menu.style.transition = '1s ease-in-out'
   } else {
-    menu.style.right = '-1000%'
+    menu.style.right = '-100%'
     menu.style.transition = '1s ease-in-out'
   }
 }
