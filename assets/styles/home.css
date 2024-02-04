@@ -454,5 +454,6 @@ main section#nerf .nerf-wrapper .nerf-content button {
 
     main section#nerf .nerf-wrapper .nerf-content p {
         font-size: 20px;
+        width: 327px;
     }
 }
