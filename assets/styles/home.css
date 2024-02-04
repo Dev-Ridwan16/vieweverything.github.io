@@ -81,7 +81,7 @@ main section#hero-section .hero-wrapper .hero-content .hero-footer button {
 }
 
 /* Default Sections style */
-main section#exp {
+main section#exp, main section#msv {
     height: 100vh;
 }
 
@@ -169,7 +169,7 @@ main section.partner img {
     margin: 0 auto;
 }
 
-main section#exp .exp-wrapper {
+main section#exp .exp-wrapper, main section#msv .msv-wrapper {
     max-width: 85%;
     margin: 0 auto;
     display: flex;
@@ -178,29 +178,29 @@ main section#exp .exp-wrapper {
 
 }
 
-main section#exp .exp-wrapper .exp-img {
+main section#exp .exp-wrapper .exp-img, main section#msv .msv-wrapper .msv-img {
     width: 488px;
     height: 562.62px;
 }
 
-main section#exp .exp-wrapper .exp-img img {
+main section#exp .exp-wrapper .exp-img img, main section#msv .msv-wrapper .msv-img img {
     width: 100%;
     height: 100%;
 }
 
-main section#exp .exp-wrapper .exp-content {
+main section#exp .exp-wrapper .exp-content, main section#msv .msv-wrapper .msv-content {
     width: 589px;
     height: 296px;
 }
 
-main section#exp .exp-wrapper .exp-content h2 {
+main section#exp .exp-wrapper .exp-content h2, main section#msv .msv-wrapper .msv-content h2 {
     font-family: var(--secondary-font);
     font-weight: 600;
     font-size: 32px;
     line-height: 40px;
 }
 
-main section#exp .exp-wrapper .exp-content p {
+main section#exp .exp-wrapper .exp-content p, main section#msv .msv-wrapper .msv-content p {
     font-family: var(--secondary-font);
     font-size: 24px;
     font-weight: 400;
@@ -208,17 +208,22 @@ main section#exp .exp-wrapper .exp-content p {
     margin-top: 15px;
 }
 
-main section#exp .exp-wrapper .exp-content ul {
+main section#exp .exp-wrapper .exp-content ul, main section#msv .msv-wrapper .msv-content ul {
     margin-top: 20px;
     height: 112px;
 }
 
-main section#exp .exp-wrapper .exp-content ul li {
+main section#exp .exp-wrapper .exp-content ul li, main section#msv .msv-wrapper .msv-content ul li {
     list-style-image: url('/assets/images/home_assets/Icon.png');
     font-size: 16px;
     line-height: 24px;
     margin: 10px 0 0 30px;
     width: 589px;
+}
+
+/* MSV SECTION STYLING STARTS HERE */
+main section#msv .msv-wrapper {
+    flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 767px) {
@@ -306,31 +311,31 @@ main section#exp .exp-wrapper .exp-content ul li {
         height: 53px;
     }
 
-    main section#exp .exp-wrapper {
+    main section#exp .exp-wrapper, main section#msv .msv-wrapper {
         flex-direction: column-reverse;
         align-items: start;
     }
 
     main section#exp .exp-wrapper .exp-content, 
-    main section#exp .exp-wrapper .exp-img {
+    main section#exp .exp-wrapper .exp-img, main section#msv .msv-wrapper .msv-content, main section#msv .msv-wrapper .msv-img {
         width: 327px;
     }
 
-    main section#exp .exp-wrapper .exp-content h2 {
+    main section#exp .exp-wrapper .exp-content h2, main section#msv .msv-wrapper .msv-content h2 {
         font-size: 24px;
     }
 
-    main section#exp .exp-wrapper .exp-content p {
+    main section#exp .exp-wrapper .exp-content p, main section#msv .msv-wrapper .msv-content p {
         font-size: 20px;
     }
 
-    main section#exp .exp-wrapper .exp-content ul li {
+    main section#exp .exp-wrapper .exp-content ul li, main section#msv .msv-wrapper .msv-content ul li {
         font-size: 16px;
         line-height: 24px;
         width: 295px;
     }
 
-    main section#exp .exp-wrapper .exp-img {
+    main section#exp .exp-wrapper .exp-img, main section#msv .msv-wrapper .msv-img {
         margin-top: 20%;
     }
 }
