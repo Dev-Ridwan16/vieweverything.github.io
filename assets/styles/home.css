@@ -447,4 +447,12 @@ main section#nerf .nerf-wrapper .nerf-content button {
         justify-content: center;
         align-items: center;
     }
+
+    main section#nerf .nerf-wrapper .nerf-content h4 {
+        font-size: 28px;
+    }
+
+    main section#nerf .nerf-wrapper .nerf-content p {
+        font-size: 20px;
+    }
 }
