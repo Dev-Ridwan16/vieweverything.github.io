@@ -226,6 +226,75 @@ main section#msv .msv-wrapper {
     flex-direction: row-reverse;
 }
 
+main section#nerf {
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section#nerf .nerf-wrapper {
+    background-color: #14394C;
+    width: 1200px;
+    height: 406px;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+}
+
+main section#nerf .nerf-wrapper .nerf-img {
+    width: 280px;
+    height: 562.62px;
+    position: absolute;
+    left: 205px;
+    top: 50px;
+    transform: translateX(-205px);
+    transform: translateY(-110px);
+}
+
+main section#nerf .nerf-wrapper .nerf-img img {
+    width: 100%;
+    height: 100%;
+}
+
+main section#nerf .nerf-wrapper .nerf-content {
+    position: absolute;
+    width: 386px;
+    height: 264px;
+    left: 613px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main section#nerf .nerf-wrapper .nerf-content h4 {
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-weight: 600;
+    height: 40px;
+}
+
+main section#nerf .nerf-wrapper .nerf-content p {
+    font-size: 24px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    height: 96px;
+    width: 386px;
+    line-height: 32px;
+}
+
+main section#nerf .nerf-wrapper .nerf-content button {
+    background-color: var(--bg-color);
+    width: 182px;
+    height: 58px;
+    border-radius: 4px;
+    /* padding: 56px 38px; */
+}
+
 @media screen and (max-width: 767px) {
     
     header div.header_wrapper .menu-toggle {
@@ -337,5 +406,45 @@ main section#msv .msv-wrapper {
 
     main section#exp .exp-wrapper .exp-img, main section#msv .msv-wrapper .msv-img {
         margin-top: 20%;
+    }
+
+    main section#nerf {
+        height: 446px;
+        margin-top: 100px;
+        z-index: 10;
+    }
+
+    main section#nerf .nerf-wrapper {
+        position: unset;
+        width: 100%;
+        height: 766px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        z-index: 999;
+        overflow-y: hidden;
+    }
+
+    main section#nerf .nerf-wrapper .nerf-img, main section#nerf .nerf-wrapper .nerf-content {
+        position: unset;
+    }
+
+    main section#nerf .nerf-wrapper .nerf-img {
+        height: 30rem;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    main section#nerf .nerf-wrapper .nerf-img img {
+        height: 45rem;
+    }
+
+    main section#nerf .nerf-wrapper .nerf-content {
+        text-align: center;
+        margin-top: 80%;
+        justify-content: center;
+        align-items: center;
     }
 }
