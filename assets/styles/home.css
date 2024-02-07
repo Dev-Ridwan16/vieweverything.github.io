@@ -580,6 +580,78 @@ main section#easy-simple .easy-simple-wrapper .beside button {
     margin-top: 30px;
 }
 
+main section#testimonial {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section#testimonial .testimonial-wrapper {
+    width: 1199px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section#testimonial .testimonial-wrapper h2 {
+    width: 557px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 32px ;
+    font-family: var(--secondary-font);
+    text-align: center;
+}
+
+main section#testimonial .testimonial-wrapper .slide {
+    display: flex;
+    margin-top: 40px;
+    gap: 12px;
+}
+
+main section#testimonial .testimonial-wrapper .slide .row {
+    width: 387px;
+    border: 1px #d7d7d7 solid;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+main section#testimonial .testimonial-wrapper .slide .row:nth-child(odd) {
+    height: 312px;
+}
+
+main section#testimonial .testimonial-wrapper .slide .row:nth-child(even) {
+    height: 288px;
+}
+
+main section#testimonial .testimonial-wrapper .slide .row h4 {
+    font-size: 24px;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+}
+
+main section#testimonial .testimonial-wrapper .slide .row p {
+    font-size: 16px;
+    font-weight: 400;
+    width: 347px;
+    height: 168px;
+    line-height: 24px;
+}
+
+main section#testimonial .testimonial-wrapper .slide .row:nth-child(even) p {
+    height: 144px;
+}
+
+main section#testimonial .testimonial-wrapper .slide .row .giver {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
 @media screen and (max-width: 767px) {
     
     header div.header_wrapper .menu-toggle {
@@ -860,5 +932,17 @@ main section#easy-simple .easy-simple-wrapper .beside button {
 
     main section#easy-simple .easy-simple-wrapper .beside button {
         margin-top: 0;
+    }
+
+    main section#testimonial .testimonial-wrapper .slide {
+        flex-direction: column;
+    }
+
+    main section#testimonial .testimonial-wrapper h2 {
+        width: 300px;
+        height: 72px;
+        font-size: 28px;
+        line-height: 36px;
+        text-align: left;
     }
 }
