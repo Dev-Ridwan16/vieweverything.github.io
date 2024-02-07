@@ -298,6 +298,7 @@ main section#nerf .nerf-wrapper .nerf-content button {
 
 main section#threeD {
     background-color: var(--bg-color);
+    padding-bottom: 50px;
 }
 
 main section#threeD hr {
@@ -445,6 +446,58 @@ main section#threeD .threeD-wrapper div.grid .middle .left .content p {
 
 main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content {
     height: 176px;
+}
+
+main section#get-started {
+    height: 654px;
+    background-color: #14394C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+main section#get-started .get-started-img {
+    width: 607px;
+    height: 654px;
+}
+
+main section#get-started .get-started-img img {
+    width: 100%;
+    height: 100%;
+}
+
+main section#get-started .get-started-content {
+    width: 709px;
+    height: 210 px;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main section#get-started .get-started-content h4 {
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-weight: 600;
+    height: 80px;
+    width: 500px;
+}
+
+main section#get-started .get-started-content p {
+    font-size: 24px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    height: 32px;
+    width: 589px;
+    line-height: 32px;
+}
+
+main section#get-started .get-started-content button {
+    background-color: var(--bg-color);
+    width: 182px;
+    height: 58px;
+    border-radius: 4px;
 }
 
 
@@ -657,5 +710,41 @@ main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content {
     main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-img, main section#threeD .threeD-wrapper div.grid .top2 .top-wrapper .top-img img {
         width: 250px;
         height: 320px;
+    }
+
+    main section#get-started {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 766.04px;
+        padding-bottom: 64px;
+    }
+
+    main section#get-started .get-started-img {
+        width: 375px;
+        height: 404px;
+    }
+
+    main section#get-started .get-started-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    main section#get-started .get-started-content {
+        width: 327px;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    main section#get-started .get-started-content h4, main section#get-started .get-started-content p {
+        width: 327px;
+        height: 108px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    main section#get-started .get-started-content p {
+        font-size: 20px;
+        height: 60px;
     }
 }
