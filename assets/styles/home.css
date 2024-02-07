@@ -652,6 +652,116 @@ main section#testimonial .testimonial-wrapper .slide .row .giver {
     align-items: center;
 }
 
+main section#newsletter {
+    background-color: var(--main-color);
+    height: 192px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section#newsletter .newsletter-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+main section#newsletter .newsletter-wrapper .subscribe h4 {
+    font-size: 22px;
+    line-height: 28px;
+    height: 28px;
+}
+
+main section#newsletter .newsletter-wrapper .subscribe p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+main section#newsletter .newsletter-wrapper .input {
+    width: 584px;
+    display: flex;
+    gap: 12px;
+}
+
+main section#newsletter .newsletter-wrapper .input input {
+    width: 459px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+main section#newsletter .newsletter-wrapper .input button {
+    width: 113px;
+    height: 40px;
+    color: var(--main-color);
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+footer div.footer-wrapper {
+    width: 85%;
+    margin: 50px auto;
+}
+
+footer div.footer-wrapper header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div.footer-wrapper header .ccc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer div.footer-wrapper header .ccc img {
+    width: 37.19px;
+    height: 32px;
+}
+
+footer div.footer-wrapper header .ccc nav ul {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer div.footer-wrapper header div.download-btn img {
+    width: 148.5px;
+    height: 44px;
+}
+
+footer div.footer-wrapper hr {
+    width: 100%;
+    border: 1px #d7d7d7 solid;
+    margin: 70px 0;
+}
+
+footer div.footer-wrapper .sub-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div.footer-wrapper .sub-footer img {
+    width: 144px;
+    height: 24px;
+}
+
+footer div.footer-wrapper .sub-footer .last {
+    display: flex;
+    justify-content: space-between;
+    width: 238px;
+    height: 20px;
+    color: #9CA3AF;
+}
+
 @media screen and (max-width: 767px) {
     
     header div.header_wrapper .menu-toggle {
@@ -944,5 +1054,51 @@ main section#testimonial .testimonial-wrapper .slide .row .giver {
         font-size: 28px;
         line-height: 36px;
         text-align: left;
+    }
+
+    main section#newsletter {
+        height: 326px;
+    }
+
+    main section#newsletter .newsletter-wrapper {
+        flex-direction: column;
+        gap: 20px   ;
+    }
+
+    main section#newsletter .newsletter-wrapper .input {
+        width: 327px;
+        flex-direction: column;
+    }
+
+    main section#newsletter .newsletter-wrapper .input input {
+        width: 327px;
+    }
+
+    footer div.footer-wrapper {
+        width: 327px;
+    }
+
+    footer div.footer-wrapper header {
+        flex-direction: column;
+        align-items: start;
+        /* width: 327px; */
+    }
+
+    footer div.footer-wrapper header .ccc {
+        width: 327px;
+    }
+
+    footer div.footer-wrapper header .ccc nav ul{
+        width: 327px;
+    }
+
+    footer div.footer-wrapper hr {
+        width: 327px;
+    }
+
+    footer div.footer-wrapper .sub-footer {
+        flex-direction: column;
+        width: 327px;
+        gap: 20px;
     }
 }
