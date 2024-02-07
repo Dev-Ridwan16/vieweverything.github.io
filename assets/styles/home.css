@@ -26,6 +26,7 @@ header {
     top: 0;
     width: 100%;
     background: #fff;
+    z-index: 1099;
 }
 
 header div.header_wrapper, header div.header_wrapper nav ul {
@@ -329,7 +330,7 @@ main section#threeD .threeD-wrapper div.grid {
     gap: 10px;
 }
 
-main section#threeD .threeD-wrapper div.grid .top {
+main section#threeD .threeD-wrapper div.grid .top, main section#threeD .threeD-wrapper div.grid .top2 {
     background-color: #ffffff;
     border: 2px var(--main-color) solid;
     border-left: none;
@@ -342,27 +343,31 @@ main section#threeD .threeD-wrapper div.grid .top {
     align-items: center;
 }
 
-main section#threeD .threeD-wrapper div.grid .top .top-wrapper {
+main section#threeD .threeD-wrapper div.grid .top .top-wrapper, main section#threeD .threeD-wrapper div.grid .top2 .top-wrapper {
     display: flex;
     justify-content: space-between;
+    width: 85%; 
+    margin: 0 auto;  
+}
+
+main section#threeD .threeD-wrapper div.grid .top2 .top-wrapper {
     align-items: center;
-    width: 85%;
-    
 }
 
-main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content {
+main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content, main section#threeD .threeD-wrapper div.grid .top2 .top-wrapper .top-content {
     width: 305px;
-    height: 328px;
+    /* height: 328px; */
+    margin: 0 auto;
 }
 
-main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content h5 {
+main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content h5, main section#threeD .threeD-wrapper div.grid .top2 .top-wrapper .top-content h5 {
     font-family: var(--secondary-font);
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
 }
 
-main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content p {
+main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content p, main section#threeD .threeD-wrapper div.grid .top2 .top-wrapper .top-content p {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -390,6 +395,11 @@ main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content ul l
 main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-img {
     width: 388px;
     height: 388px;
+}
+
+main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-img img {
+    width: 100%;
+    height: 100%;
 }
 
 main section#threeD .threeD-wrapper div.grid .middle {
@@ -600,42 +610,52 @@ main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content {
         width: 327px;
     }
 
-    main section#threeD {
-        margin-top: 160px;
-    }
-
-    main section#threeD hr {
-        display: none;
+    main section#threeD .threeD-wrapper {
+        margin-top: 200px;
     }
 
     main section#threeD .threeD-wrapper h4 {
-        text-align: left;
-        margin: 50px 0;
-        padding-top: 50px;
         font-size: 24px;
         width: 327px;
-        /* height: auto; */
+        text-align: left;
     }
 
-    main section#threeD .threeD-wrapper div.grid .top, main section#threeD .threeD-wrapper div.grid .middle .left {
-        width: 327px;
-        height: 691.28px;
-    }
-
-    main section#threeD .threeD-wrapper div.grid .top .top-wrapper, 
+    
     main section#threeD .threeD-wrapper div.grid .middle {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 150px;
     }
 
-    main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-img, main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content, main section#threeD .threeD-wrapper div.grid .middle .left .content p {
+    main section#threeD .threeD-wrapper div.grid .top, main section#threeD .threeD-wrapper div.grid .top2, main section#threeD .threeD-wrapper div.grid .middle .left {
+        width: 305px;
+        height: 80vh;
+        padding: 50px 10px;
+    }
+
+    main section#threeD .threeD-wrapper div.grid .top .top-wrapper,
+    main section#threeD .threeD-wrapper div.grid .top2 .top-wrapper {
+        flex-direction: column;
+    }
+
+    main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content {
+        height: 294px;
+    }
+
+    main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content h5, main section#threeD .threeD-wrapper div.grid .top2 .top-wrapper .top-content h5, main section#threeD .threeD-wrapper div.grid .middle .left .content h5 {
+        font-size: 20px;
         width: 295px;
     }
 
-    main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-img img {
-        height: 301px;
-        width: 305px;
+    main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content p, main section#threeD .threeD-wrapper div.grid .top2 .top-wrapper .bottom-content p, main section#threeD .threeD-wrapper div.grid .middle .left .content p {
+        font-size: 16px;
+        width: 295px;
+    }
+
+    main section#threeD .threeD-wrapper div.grid .top2 .top-wrapper .top-content p { 
+        width: 295px;
+    }
+
+    main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-img, main section#threeD .threeD-wrapper div.grid .top2 .top-wrapper .top-img img {
+        width: 250px;
+        height: 320px;
     }
 }
