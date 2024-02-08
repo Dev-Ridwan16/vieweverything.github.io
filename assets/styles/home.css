@@ -948,6 +948,7 @@ footer div.footer-wrapper .sub-footer .last {
     main section#threeD .threeD-wrapper div.grid .top .top-wrapper,
     main section#threeD .threeD-wrapper div.grid .top2 .top-wrapper {
         flex-direction: column;
+        width: 100%;
     }
 
     main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content {
@@ -955,7 +956,7 @@ footer div.footer-wrapper .sub-footer .last {
     }
 
     main section#threeD .threeD-wrapper div.grid .top .top-wrapper .top-content h5, main section#threeD .threeD-wrapper div.grid .top2 .top-wrapper .top-content h5, main section#threeD .threeD-wrapper div.grid .middle .left .content h5 {
-        font-size: 20px;
+        font-size: 18px;
         width: 295px;
     }
 
@@ -1042,6 +1043,10 @@ footer div.footer-wrapper .sub-footer .last {
 
     main section#easy-simple .easy-simple-wrapper .beside button {
         margin-top: 0;
+    }
+
+    main section#testimonial {
+        margin-top: 800px;
     }
 
     main section#testimonial .testimonial-wrapper .slide {
